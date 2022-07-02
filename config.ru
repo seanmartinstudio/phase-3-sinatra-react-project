@@ -12,4 +12,6 @@ end
 use Rack::JSONBodyParser
 
 # Our application
+use ToDosController
+use CatagoriesController
 run ApplicationController
