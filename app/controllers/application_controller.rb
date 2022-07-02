@@ -3,8 +3,28 @@ class ApplicationController < Sinatra::Base
   
   # Add your routes here
   get "/" do
-    "Hello World"
+    "Hello World!!!"
     # { message: "Good luck with your project!" }.to_json
   end
 
+  get "/categories" do
+    categories = Category.all
+    categories.to_json
+    #return JSON
+  end
+
+  get "/categories/:id" do
+    #retur JSON
+  end
+
+  get "/to_dos" do 
+    #return JSON
+  end
+
+  get "/to_dos" do
+    #return JSON
+  end
+
+
 end
+
