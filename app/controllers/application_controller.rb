@@ -7,26 +7,30 @@ class ApplicationController < Sinatra::Base
   #   # { message: "Good luck with your project!" }.to_json
   # end
 
-  get "/categories" do
-    categories = Category.all
-    categories.to_json
-    #return JSON
-  end
+  # get "/categories" do
+  #   categories = Category.all
+  #   categories.to_json
+  #   #return JSON
+  # end
 
-  get "/categories/:id" do
-    #retur JSON
-  end
+  # get "/categories/:id" do
+  #   #retur JSON
+  # end
 
-  get "/to_dos" do 
-    to_dos = ToDo.all 
-    to_dos.to_json
-    #return JSON
-  end
+  # get "/to_dos" do 
+  #   to_dos = ToDo.all 
+  #   to_dos.to_json
+  #   #return JSON
+  # end
 
-  get "/to_dos" do
-    #return JSON
-  end
+  # get "/to_dos" do
+  #   #return JSON
+  # end
+
 
 
 end
+
+
+
 
