@@ -23,6 +23,7 @@ gem "activerecord", "~> 6.1"
 # Configures common Rake tasks for working with Active Record
 # https://github.com/sinatra-activerecord/sinatra-activerecord
 gem "sinatra-activerecord", "~> 2.0"
+gem "pry"
 
 # Run common tasks from the command line
 # https://github.com/ruby/rake
@@ -36,7 +37,7 @@ gem "require_all", "~> 3.0"
 
 # These gems will only be used when we are running the application locally
 group :development do
-  gem "pry", "~> 0.14.1"
+  # gem "pry", "~> 0.14.1"
 
   # Automatically reload when there are changes
   # https://github.com/alexch/rerun

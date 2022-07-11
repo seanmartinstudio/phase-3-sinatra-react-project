@@ -18,9 +18,10 @@ class ApplicationController < Sinatra::Base
   # end
 
   # get "/to_dos" do 
-  #   to_dos = ToDo.all 
-  #   to_dos.to_json
-  #   #return JSON
+  #   # to_dos = ToDo.all 
+  #   # to_dos.to_json
+  #   # #return JSON
+  #   "hello wpasdfaosidjfasd"
   # end
 
   # get "/to_dos" do
