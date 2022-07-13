@@ -10,7 +10,17 @@ post "/categories" do
     categories.to_json
 end
 
-#read
+post "/categories-todos" do
+    category = Category.find_or_create_by(name: params[:category_name])
+    category.to_dos.create(
+        name: params[:to_do_name],
+        complete: params[:complete]
+    )
+    # category.includes(:to_dos).to_json
+    category.to_json
+end
+
+#read all
 get "/categories" do 
     categories = Category.all
     categories.to_json
