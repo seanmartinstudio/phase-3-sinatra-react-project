@@ -13,7 +13,7 @@ todos = ToDo.create(
 todos.to_json
 end
 
-#read
+#read all
 get "/todos" do 
     todos = ToDo.all
     todos.to_json
@@ -27,12 +27,20 @@ end
 
 #update
 patch "/todos/:id" do
-
+    todos = ToDo.find(params[:id])
+    todos.update(
+        name: params [:name],
+        category_id: params [:category_id],
+        complete: params [:complete]
+    )
+    todos.to_json
 end
 
 #delete
 delete "/todos/:id" do
-
+    todos = ToDo.find(params[:id])
+    todos.destroy
+    todos.to_json
 end
 
 
