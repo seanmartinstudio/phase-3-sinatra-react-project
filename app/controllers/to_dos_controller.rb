@@ -29,9 +29,9 @@ end
 patch "/todos/:id" do
     todos = ToDo.find(params[:id])
     todos.update(
-        name: params [:name],
-        category_id: params [:category_id],
-        complete: params [:complete]
+        name: params[:name],
+        category_id: params[:category_id],
+        complete: params[:complete]
     )
     todos.to_json
 end
