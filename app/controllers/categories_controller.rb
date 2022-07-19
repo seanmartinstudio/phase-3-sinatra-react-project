@@ -4,7 +4,6 @@ class CatagoriesController < ApplicationController
 
 #needed 'use CatagoriesController' in config.ru, then inhereting from Application Controller
 
-
 #Creates new To Do and Category (unless category has already been created)
 post "/categories-todos" do
     category = Category.find_or_create_by(name: params[:category_name])
