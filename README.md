@@ -3,6 +3,9 @@
 ## Overview
 A task management app that allows a user to create, read, update and delete a list of personal and professional `To Do` items.
 
+## Frontend Repo
+* [React Repo](https://github.com/seanmartinstudio/to-do-app.git)
+
 ## Installation
 * Fork and clone the Sinatra backend: `https://github.com/seanmartinstudio/phase-3-sinatra-react-project.git`.
 * Navigate to the `phase-3-sinatra-react-project` project file in the terminal.
